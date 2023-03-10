@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://www.flaticon.es/icono-gratis/ordenador-personal_2292038?term=pc&page=1&position=4&origin=search&related_id=2292038 -->
+    <link rel="shortcut icon" href="Images/pc.png">
+    <title>Agustin Salum</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <!-- Contenido Navbar -->
+      
+      <!-- Icono principal -->
+      <a class="navbar-brand" href="index.html">
+        <!-- https://pixabay.com/es/vectors/icono-s%c3%admbolo-1976100/ -->
+        <img src="Images/house.png" width="40px" height="40px" alt="Principal">
+      </a>
+      
+      <!-- Paleta colores -->
+      <label for="customRange3" class="form-label"></label>
+      <input onclick="paleta_colores(this.value)" type="range" class="form-range"  min="1" max="2" step="1" id="customRange3">
+      
+      <!-- Agregue aqui un nuevo acceso -->
+
+      <!-- Agregue aqui un nuevo acceso -->
+    </nav>
+    
+    <!-- Contenido Body -->
+    <img id="profile" src="Images/profile.png" class="rounded mx-auto d-block" alt="Agustin">
+    <center>
+      <button onclick="sobre_mi()" type="button" class="btn btn-secondary btn-sm">Sobre mi</button>
+      <p id="descripcion"> </p>
+    </center>
+
+    <footer id="footer"  class="text-center text-lg-start bg-white text-muted">
+      <!-- Contenido footer -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-1 border-bottom">
+        
+        <div class="container p-4 pb-0">
+          <section class="mb-1">
+            <center>
+              
+              <!-- Instagram -->
+              <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/agustin_salum92/" role="button">
+                <i class="fab fa-instagram">Instagram</i>
+              </a>
+              
+              <!-- Linkedin -->
+              <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button">
+                <i class="fab fa-linkedin-in">Linkedin</i>
+              </a>
+              
+              <!-- Github -->
+              <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/agustinsalum" role="button">
+                <i class="fab fa-github">Github</i>
+              </a>
+            </center>
+          </div>
+      </footer>
+  
+  </body>
+
+  <script type="text/javascript" src="js/boton.js"></script>
+</html>
