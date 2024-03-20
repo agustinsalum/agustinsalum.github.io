@@ -2,6 +2,8 @@
 
 @media screen and (min-width: 1025px) {
 
+    /* Body */
+
     * {
         margin: 0;
         padding: 0;
@@ -16,6 +18,8 @@
         padding: 0;
         height: 100vh;
     }
+
+    /* Header */
 
     header {
         display: flex;
@@ -44,6 +48,7 @@
 
     li a {
         display: flex;
+        justify-content: space-between;
         color: white;
         font-family: "Cormorant Upright", serif;
         padding: 0.5vh 1vw;
@@ -53,4 +58,36 @@
     li a:hover {
         background-color: rgba(9, 7, 33, 0.932);
     }
+
+    /* Section */
+    
+    .sectionMain {
+        display: grid;
+        /* One column for the aside and another for the article */ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    } 
+
+    aside {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .profile-photo {
+        display: grid;
+        justify-content: space-between;
+        grid-template: auto;
+        border-radius: 50%;
+    }
+
+    .contact {
+        
+        
+    }
+
+
+
 }
