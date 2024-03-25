@@ -84,8 +84,15 @@
     }
 
     .contact {
-        
-        
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4vh;
+    }
+
+    .icon {
+        height: 10vh;
+        border-radius: 50%;
+        padding: 0vh 1vw;
     }
 
 
