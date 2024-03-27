@@ -61,7 +61,7 @@
 
     /* Section */
 
-    .sectionMain {
+    .sectionIndexMain {
         display: grid;
         /* One column for the aside and another for the article */
         grid-template-columns: 1fr 1fr;
@@ -183,6 +183,53 @@
         font-family: "Cormorant Upright", serif;
         color: white;
         font-size: 3vh
+    }
+
+    /* Projects */
+
+    .sectionProjectsMain {
+        display: grid;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    }
+
+    .gallery {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: 1fr 1fr;
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-1 {
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-2 {
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-3 {
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-4 {
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-5 {
+        border-style: solid;
+        border-color: blue;
+    }
+
+    .box-6 {
+        border-style: solid;
+        border-color: blue;
     }
 
 }
