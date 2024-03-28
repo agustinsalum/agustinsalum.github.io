@@ -198,38 +198,95 @@
         justify-content: space-between;
         grid-template-columns: repeat(3, 33.33%);
         grid-template-rows: 1fr 1fr;
-        border-style: solid;
-        border-color: blue;
     }
 
     .box-1 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
 
     .box-2 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
 
     .box-3 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
 
     .box-4 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
 
     .box-5 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
 
     .box-6 {
-        border-style: solid;
-        border-color: blue;
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
     }
+
+    .project-description {
+        display: flex;
+        justify-content: center;
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        font-size: 4vh;
+        padding-top: 2vh;
+    }
+
+    .box-button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3vh;
+    }
+
+    .button {
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        background-color: #0704aa47;
+        box-shadow: 0 1vh #999;
+        padding: 1% 2%;
+        font-size: 4vh; 
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        border-radius: 4vh;
+    }
+    
+    .button:hover {
+        background-color: #0704aaaf;
+    }
+    
+    .button:active {
+        background-color: #0704aa;
+        box-shadow: 0 1vh #666;
+        transform: translateY(1vh);
+    }
+
 
 }
