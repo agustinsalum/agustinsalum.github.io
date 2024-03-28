@@ -196,8 +196,11 @@
     .gallery {
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(3, 33.33%);
+        /* Set 33.33% in case of removing grid-gap to ensure that the boxes inside the gallery are still evenly distributed. */
+        /* Grid-gap consumes space. */
+        grid-template-columns: repeat(3, 30%);
         grid-template-rows: 1fr 1fr;
+        grid-gap: 6vh;
     }
 
     .box-1 {
@@ -254,6 +257,7 @@
         font-family: "Cormorant Upright", serif;
         color: white;
         font-size: 4vh;
+        margin-bottom: 1vh;
         padding-top: 2vh;
     }
 
