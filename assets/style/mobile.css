@@ -25,6 +25,32 @@
 
     /* Header */
 
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(31, 26, 26);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px auto;
+        transition: 1s;
+    }
+
+    /* Nav class name --> menu */
+    .menu {
+        display: none;
+    }
+
+    /* Nav class name --> menu */
+    .menu.active {
+        display: block;
+    }
+
     header {
         display: flex;
         justify-content: space-between;
@@ -56,9 +82,12 @@
         justify-content: space-between;
         color: white;
         font-family: "Cormorant Upright", serif;
-        padding: 0.5vh 1vw;
+        /* adapted for mobile devices */
+        padding: 0.5vh 5vw;
         /* adapted for mobile devices */
         font-size: 3.5vh;
+        /* adapted for mobile devices */
+        padding-left: 25vh;
     }
 
     li a:hover {
