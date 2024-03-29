@@ -1,3 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+/* reduce font size, change column layout in gallery */
 
 @media screen and (min-width:768px) and (max-width: 1025px) {
+
+
+    /* Body */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* adapted for tablet */
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 6vh;
+        background-color: rgb(9 7 33 / 52%);
+    }
+
+    nav {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    li a {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-family: "Cormorant Upright", serif;
+        padding: 0.5vh 1vw;
+        /* adapted for tablet */
+        font-size: 3vh;
+    }
+
+    li a:hover {
+        background-color: rgba(9, 7, 33, 0.932);
+    }
+
+    /* Section */
+
+    .sectionIndexMain {
+        display: grid;
+        /* adapted for tablet */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    }
+
+    /* Aside */
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-photo {
+        display: grid;
+        justify-content: space-between;
+        grid-template: auto;
+        border-radius: 50%;
+    }
+
+    /* article */
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4vh;
+    }
+
+    .icon {
+        height: 10vh;
+        border-radius: 50%;
+        padding: 0vh 1vw;
+    }
+
+    .welcome {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding-top: 20vh;
+    }
+
+    .message {
+        font-family: "Cormorant Upright", serif;
+        /* adapted for tablet */
+        font-size: 5vh
+    }
+
+    /* waving-hand */
+
+    .waving-hand {
+        animation-name: wave-animation;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
+    }
+
+    @keyframes wave-animation {
+        0% {
+            transform: rotate(0.0deg)
+        }
+
+        15% {
+            transform: rotate(14.0deg)
+        }
+
+        /* The following five values can be played with to make the waving more or less extreme */
+        30% {
+            transform: rotate(-8.0deg)
+        }
+
+        40% {
+            transform: rotate(14.0deg)
+        }
+
+        50% {
+            transform: rotate(-4.0deg)
+        }
+
+        60% {
+            transform: rotate(10.0deg)
+        }
+
+        70% {
+            transform: rotate(0.0deg)
+        }
+
+        /* Reset for the last half to pause */
+        100% {
+            transform: rotate(0.0deg)
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+    }
+
+    #keywords {
+        color: white;
+        font-family: "Cormorant Upright", serif;
+        padding-top: 5vh;
+        font-size: 4vh
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4vh;
+        background-color: rgb(9 7 33 / 52%);
+    }
+
+    .foot {
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        font-size: 3vh
+    }
+
+    /* Projects */
+
+    .sectionProjectsMain {
+        display: grid;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    }
+
+    .gallery {
+        display: grid;
+        justify-content: space-between;
+        /* adapted for tablet */
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: 1fr 1fr;
+        /* adapted for tablet */
+        grid-gap: 3vh;
+    }
+
+    .box-1 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-2 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-3 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-4 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-5 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-6 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .project-description {
+        display: flex;
+        justify-content: center;
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        /* adapted for tablet */
+        font-size: 3.5vh;
+        margin-bottom: 1vh;
+        padding-top: 2vh;
+    }
+
+    .box-button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3vh;
+    }
+
+    .button {
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        background-color: #0704aa47;
+        box-shadow: 0 1vh #999;
+        /* adapted for tablet */
+        padding: 1.5% 3%;
+        /* adapted for tablet */
+        font-size: 3.5vh; 
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        border-radius: 4vh;
+    }
+    
+    .button:hover {
+        background-color: #0704aaaf;
+    }
+    
+    .button:active {
+        background-color: #0704aa;
+        box-shadow: 0 1vh #666;
+        transform: translateY(1vh);
+    }
 }
