@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+@media screen and (min-width: 1025px) {
+
+    /* Body */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url('/assets/image/wallpaper.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 6vh;
+        background-color: rgb(9 7 33 / 52%);
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 6vh;
+    }
+
+    .nav_list {
+        display: flex;
+        position: relative;
+        width: 40vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_list a {
+        display: flex;
+        color: white;
+        font-family: "Cormorant Upright", serif;
+        text-decoration: none;
+        font-size: 5vh;
+        line-height: 6vh;
+        padding: 0vh 4vh;
+    }
+
+    .nav_list li {
+        display: flex;
+        position: relative;
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_list li:hover {
+        background-color: rgba(2, 1, 10, 0.884);
+    }
+
+    .nav_list ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(9 7 33 / 52%);
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav_list ul li {
+        float: none;
+        width: 30vh;
+    }
+
+    .nav_list ul a {
+        line-height: 5vh;
+        padding: 3vh 3vh;
+    }
+
+    .nav_list ul ul {
+        position: absolute;
+        top: 0;
+        left: 30vh;
+        background-color: rgb(9 7 33 / 52%);
+    }
+
+    .nav_list li:hover>ul {
+        display: block;
+    }
+
+    /* Section */
+
+    .sectionIndexMain {
+        display: grid;
+        /* One column for the aside and another for the article */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    }
+
+    /* Aside */
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-photo {
+        display: grid;
+        justify-content: space-between;
+        grid-template: auto;
+        border-radius: 50%;
+    }
+
+    /* article */
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4vh;
+    }
+
+    .icon {
+        height: 10vh;
+        border-radius: 50%;
+        padding: 0vh 1vw;
+    }
+
+    .welcome {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding-top: 20vh;
+    }
+
+    .message {
+        font-family: "Cormorant Upright", serif;
+        font-size: 7vh
+    }
+
+    /* waving-hand */
+
+    .waving-hand {
+        animation-name: wave-animation;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
+    }
+
+    @keyframes wave-animation {
+        0% {
+            transform: rotate(0.0deg)
+        }
+
+        15% {
+            transform: rotate(14.0deg)
+        }
+
+        /* The following five values can be played with to make the waving more or less extreme */
+        30% {
+            transform: rotate(-8.0deg)
+        }
+
+        40% {
+            transform: rotate(14.0deg)
+        }
+
+        50% {
+            transform: rotate(-4.0deg)
+        }
+
+        60% {
+            transform: rotate(10.0deg)
+        }
+
+        70% {
+            transform: rotate(0.0deg)
+        }
+
+        /* Reset for the last half to pause */
+        100% {
+            transform: rotate(0.0deg)
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+    }
+
+    #keywords {
+        color: white;
+        font-family: "Cormorant Upright", serif;
+        padding-top: 5vh;
+        font-size: 4vh
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4vh;
+        background-color: rgb(9 7 33 / 52%);
+    }
+
+    .foot {
+        font-family: "Cormorant Upright", serif;
+        color: white;
+        font-size: 3vh
+    }
+
+    /* Projects */
+
+    .sectionProjectsMain {
+        display: grid;
+        grid-template-rows: auto;
+        min-height: 90vh;
+    }
+
+    .gallery {
+        display: grid;
+        justify-content: space-between;
+        /* Grid-gap consumes space. */
+        grid-template-columns: 105vh 105vh;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 3vh;
+    }
+
+    .box-1 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-2 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-3 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .box-4 {
+        display: grid;
+        /* Single column */
+        grid-template-columns: 1fr;
+        /* Two rows for text and button */
+        grid-template-rows: 3fr auto;
+    }
+
+    .image_on {
+        height: 43vh;
+        width: 100%;
+    }
+
+    .image_off {
+        height: 43vh;
+        width: 100%;
+    }
+
+    .image_off,
+    .image_box:hover .image_on {
+        display: none
+    }
+
+    .image_on,
+    .image_box:hover .image_off {
+        display: block
+    }
+
+
+
+}
